@@ -2,6 +2,7 @@ const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV)
 const IS_DEV = ['development'].includes(process.env.NODE_ENV)
 
 module.exports = {
+  publicPath: IS_PROD ? '/youzan': '/',
   lintOnSave: IS_DEV,
   css: {
     extract: IS_PROD,
