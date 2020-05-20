@@ -21,5 +21,4 @@ module.exports = {
 
   parallel: require('os').cpus().length > 1,
   pwa: {},
-  dev: {},
 }
